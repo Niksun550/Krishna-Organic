@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Krishna Organic Vermicompost | कृष्णा ऑरगॅनिक गांडूळ खत</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,Arial,sans-serif;background:#f5f9f5;color:#333;line-height:1.6}
+  img{max-width:100%;display:block}
+  a{text-decoration:none}
+  header{background:linear-gradient(90deg,#2e7d32,#66bb6a);color:#fff;text-align:center;padding:30px 10px;position:relative}
+  header h1{font-size:2rem;margin-bottom:5px}
+  header p{font-size:1rem}
+  nav{margin-top:10px}
+  nav a{color:#fff;margin:0 10px;font-weight:600;transition:.3s}
+  nav a:hover{text-decoration:underline}
+  .lang-toggle{position:absolute;top:15px;right:15px;background:#fff;color:#2e7d32;border:none;padding:8px 14px;border-radius:20px;font-weight:600;cursor:pointer;transition:.3s}
+  .lang-toggle:hover{background:#e8f5e9}
+  .hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;padding:60px 20px;background:linear-gradient(to right,#e8f5e9,#c8e6c9);text-align:center}
+  .hero img{max-width:400px;border-radius:12px;margin:10px;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+  .hero-text{max-width:520px;margin:15px}
+  .hero-text h2{color:#1b5e20;font-size:1.9rem}
+  .cta-btn{background:#1b5e20;color:#fff;padding:14px 26px;border-radius:6px;display:inline-block;margin-top:15px;border:none;font-weight:bold;cursor:pointer;transition:.3s}
+  .cta-btn:hover{background:#388e3c}
+  section{padding:60px 20px;text-align:center}
+  section h2{font-size:1.8rem;margin-bottom:20px;color:#1b5e20}
+  section p{font-size:1rem;margin-bottom:20px}
+  .features,.testimonials{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+  .feature,.testimonial{background:#fff;border-radius:12px;padding:25px;width:300px;box-shadow:0 4px 10px rgba(0,0,0,.1);transition:.3s}
+  .feature:hover,.testimonial:hover{transform:translateY(-5px)}
+  .testimonial p{font-style:italic;margin-bottom:10px}
+  .gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
+  .gallery img{width:280px;height:180px;object-fit:cover;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+  iframe{border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.2);margin-top:20px;width:560px;height:315px;max-width:100%}
+  .order-form{background:#fff;padding:25px;max-width:420px;margin:0 auto;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
+  .order-form input{width:100%;padding:12px;margin:10px 0;border-radius:6px;border:1px solid #ccc;font-size:1rem}
+  footer{background:#2e7d32;color:#fff;text-align:center;padding:20px;font-size:.95rem}
+  .popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);justify-content:center;align-items:center;z-index:999}
+  .popup-content{background:#fff;padding:30px;border-radius:10px;text-align:center;max-width:320px;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+  .close-btn{background:#2e7d32;color:#fff;border:none;padding:8px 15px;border-radius:5px;cursor:pointer;font-weight:bold}
+  @media(max-width:992px){.hero-text h2{font-size:1.6rem}}
+  @media(max-width:768px){.hero{flex-direction:column;padding:40px 10px}iframe{height:220px}}
+  @media(max-width:480px){header h1{font-size:1.5rem}.feature,.testimonial{width:90%}.order-form{width:90%}.cta-btn{width:100%}}
+</style>
+</head>
+<body>
+
+<header>
+  <button class="lang-toggle" onclick="toggleLang()">🇮🇳 Marathi</button>
+  <h1 id="mainTitle">Krishna Organic Vermicompost</h1>
+  <p id="subTitle">Pure Organic Fertilizer for Healthy Crops</p>
+  <nav>
+    <a href="#about" id="navAbout">About</a>
+    <a href="#features" id="navFeatures">Benefits</a>
+    <a href="#gallery" id="navGallery">Gallery</a>
+    <a href="#testimonials" id="navTestimonials">Farmers</a>
+    <a href="#contact" id="navOrder">Order</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/farmer-1869021_1280.jpg" alt="Organic Fertilizer" />
+  <div class="hero-text">
+    <h2 id="heroTitle">Grow Naturally, Grow Better 🌱</h2>
+    <p id="heroDesc">Pure, organic, and eco-friendly vermicompost for healthy crops and sustainable farming.</p>
+    <a href="#contact" class="cta-btn" id="heroBtn">📦 Place Your Order</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 id="aboutTitle">About Our Product</h2>
+  <p id="aboutDesc">Krishna Organic Vermicompost is made from 100% natural processes using earthworms, ensuring nutrient-rich fertilizer that improves soil structure and boosts crop yield.</p>
+</section>
+
+<section id="features">
+  <h2 id="featuresTitle">Benefits</h2>
+  <div class="features">
+    <div class="feature">
+      <h3 id="f1Title">🌾 Improves Soil Fertility</h3>
+      <p id="f1Desc">Enhances soil health and microbial activity.</p>
+    </div>
+    <div class="feature">
+      <h3 id="f2Title">💧 Retains Moisture</h3>
+      <p id="f2Desc">Helps soil retain water for longer periods.</p>
+    </div>
+    <div class="feature">
+      <h3 id="f3Title">🌿 100% Organic</h3>
+      <p id="f3Desc">No chemicals or pesticides used.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 id="galleryTitle">Gallery & Video</h2>
+  <div class="gallery">
+    <img src="https://cdn.pixabay.com/photo/2016/04/25/22/20/earthworm-1356752_1280.jpg" alt="Vermicompost" />
+    <img src="https://cdn.pixabay.com/photo/2019/03/15/16/32/fertilizer-4051440_1280.jpg" alt="Organic Farming" />
+    <img src="https://cdn.pixabay.com/photo/2015/09/09/18/43/fertilizer-933157_1280.jpg" alt="Farm Soil" />
+  </div>
+  <iframe src="https://www.youtube.com/embed/ykM9yqf2oJU" title="Vermicompost Video" allowfullscreen></iframe>
+</section>
+
+<section id="testimonials">
+  <h2 id="testTitle">Farmer Testimonials</h2>
+  <div class="testimonials">
+    <div class="testimonial"><p id="t1">“Using Krishna Organic Vermicompost improved my soil and crop yield drastically. Highly recommended!”</p><h4>- Ramesh Patil, Nashik</h4></div>
+    <div class="testimonial"><p id="t2">“After switching to Krishna Organic, I saw healthier crops and better water retention in my fields.”</p><h4>- Sunita Kale, Sangli</h4></div>
+    <div class="testimonial"><p id="t3">“माझ्या शेतीत मातीची सुपीकता आणि उत्पादन दोन्ही वाढले. उत्कृष्ट खत!”</p><h4>- तानाजी शिंदे, सातारा</h4></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 id="contactTitle">Order Now</h2>
+  <p id="contactDesc">Fill your details below and send us your order via WhatsApp 📲</p>
+  <div class="order-form">
+    <input type="text" id="custName" placeholder="Your Name" required>
+    <input type="text" id="custLocation" placeholder="Your Location" required>
+    <input type="number" id="custQty" placeholder="Required Quantity (in kg)" required>
+    <button class="cta-btn" id="whatsAppBtn" onclick="sendWhatsApp()">Send on WhatsApp</button>
+  </div>
+</section>
+
+<footer><p id="footerText">© 2025 Krishna Organic | All Rights Reserved</p></footer>
+
+<div class="popup" id="thankPopup">
+  <div class="popup-content">
+    <h3 id="popupTitle">Thank You 🙏</h3>
+    <p id="popupDesc">We’ve received your interest! Our team will contact you soon.</p>
+    <button class="close-btn" onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<script>
+let currentLang = "en";
+const content = {
+  en:{
+    toggle:"🇮🇳 Marathi",
+    mainTitle:"Krishna Organic Vermicompost",
+    subTitle:"Pure Organic Fertilizer for Healthy Crops",
+    navAbout:"About",navFeatures:"Benefits",navGallery:"Gallery",navTestimonials:"Farmers",navOrder:"Order",
+    heroTitle:"Grow Naturally, Grow Better 🌱",
+    heroDesc:"Pure, organic, and eco-friendly vermicompost for healthy crops and sustainable farming.",
+    heroBtn:"📦 Place Your Order",
+    aboutTitle:"About Our Product",
+    aboutDesc:"Krishna Organic Vermicompost is made from 100% natural processes using earthworms, ensuring nutrient-rich fertilizer that improves soil structure and boosts crop yield.",
+    featuresTitle:"Benefits",
+    f1Title:"🌾 Improves Soil Fertility",f1Desc:"Enhances soil health and microbial activity.",
+    f2Title:"💧 Retains Moisture",f2Desc:"Helps soil retain water for longer periods.",
+    f3Title:"🌿 100% Organic",f3Desc:"No chemicals or pesticides used.",
+    galleryTitle:"Gallery & Video",
+    testTitle:"Farmer Testimonials",
+    t1:"“Using Krishna Organic Vermicompost improved my soil and crop yield drastically. Highly recommended!”",
+    t2:"“After switching to Krishna Organic, I saw healthier crops and better water retention in my fields.”",
+    t3:"“My soil fertility and crop output improved remarkably. Great product!”",
+    contactTitle:"Order Now",contactDesc:"Fill your details below and send us your order via WhatsApp 📲",
+    whatsAppBtn:"Send on WhatsApp",
+    popupTitle:"Thank You 🙏",popupDesc:"We’ve received your interest! Our team will contact you soon.",
+    footerText:"© 2025 Krishna Organic | All Rights Reserved",
+    placeholders:{name:"Your Name",loc:"Your Location",qty:"Required Quantity (in kg)"}
+  },
+  mr:{
+    toggle:"🇬🇧 English",
+    mainTitle:"कृष्णा ऑरगॅनिक गांडूळ खत",
+    subTitle:"निरोगी पिकांसाठी शुद्ध सेंद्रिय खत",
+    navAbout:"आमच्याबद्दल",navFeatures:"फायदे",navGallery:"गॅलरी",navTestimonials:"शेतकरी",navOrder:"ऑर्डर",
+    heroTitle:"नैसर्गिक पद्धतीने वाढवा 🌱",
+    heroDesc:"शुद्ध, सेंद्रिय आणि पर्यावरणपूरक गांडूळ खत – निरोगी पिकांसाठी आणि टिकाऊ शेतीसाठी सर्वोत्तम उपाय!",
+    heroBtn:"📦 ऑर्डर करा",
+    aboutTitle:"आमच्या उत्पादनाबद्दल",
+    aboutDesc:"कृष्णा ऑरगॅनिक गांडूळ खत नैसर्गिक प्रक्रियेद्वारे तयार केले जाते. हे मातीची सुपीकता वाढवते आणि पिकांचे उत्पादन सुधारते.",
+    featuresTitle:"फायदे",
+    f1Title:"🌾 मातीची सुपीकता वाढवते",f1Desc:"मातीतील सूक्ष्मजीव वाढवून तिचे आरोग्य सुधारते.",
+    f2Title:"💧 ओलावा टिकवते",f2Desc:"मातीतील ओलावा जास्त काळ टिकवते.",
+    f3Title:"🌿 १००% सेंद्रिय",f3Desc:"रासायनिक पदार्थांशिवाय नैसर्गिक खत.",
+    galleryTitle:"गॅलरी आणि व्हिडिओ",
+    testTitle:"शेतकरी अनुभव",
+    t1:"“कृष्णा ऑरगॅनिक खत वापरल्यावर माझ्या पिकांचे उत्पादन वाढले.”",
+    t2:"“या खतामुळे पिके निरोगी आणि माती सुपीक झाली.”",
+    t3:"“उत्कृष्ट गुणवत्ता! माझ्या शेतीत चांगला फरक दिसला.”",
+    contactTitle:"आता ऑर्डर करा",contactDesc:"खालील माहिती भरा आणि WhatsApp वरून ऑर्डर पाठवा 📲",
+    whatsAppBtn:"WhatsApp वर पाठवा",
+    popupTitle:"धन्यवाद 🙏",popupDesc:"आपल्या आवडीबद्दल धन्यवाद! आमचा प्रतिनिधी लवकरच संपर्क करेल.",
+    footerText:"© २०२५ कृष्णा ऑरगॅनिक | सर्व हक्क राखीव",
+    placeholders:{name:"तुमचे नाव",loc:"तुमचे ठिकाण",qty:"किती किलो पाहिजे"}
+  }
+};
+
+function toggleLang(){
+  currentLang = currentLang==="en"?"mr":"en";
+  const t=content[currentLang];
+  document.querySelector(".lang-toggle").innerText=t.toggle;
+  for(let k in t){
+    if(document.getElementById(k)) document.getElementById(k).innerText=t[k];
+  }
+  document.getElementById("custName").placeholder=t.placeholders.name;
+  document.getElementById("custLocation").placeholder=t.placeholders.loc;
+  document.getElementById("custQty").placeholder=t.placeholders.qty;
+}
+
+function sendWhatsApp(){
+  const phone="919021537347";
+  const n=document.getElementById("custName").value.trim();
+  const l=document.getElementById("custLocation").value.trim();
+  const q=document.getElementById("custQty").value.trim();
+  if(!n||!l||!q){alert(currentLang==="en"?"Please fill all details ✅":"कृपया सर्व माहिती भरा ✅");return;}
+  const msg=`Hello Krishna Organic,%0A%0AName: ${n}%0ALocation: ${l}%0ARequired Quantity: ${q} kg`;
+  window.open(`https://wa.me/${phone}?text=${msg}`,"_blank");
+  setTimeout(()=>document.getElementById("thankPopup").style.display="flex",500);
+}
+function closePopup(){
+  document.getElementById("thankPopup").style.display="none";
+  document.getElementById("custName").value="";
+  document.getElementById("custLocation").value="";
+  document.getElementById("custQty").value="";
+}
+</script>
+</body>
+</html>
